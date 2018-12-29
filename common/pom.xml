@@ -18,5 +18,9 @@
     <url>http://www.example.com</url>
     <modules>
         <module>base</module>
+        <module>cache</module>
+        <module>datasource</module>
+        <module>logging</module>
+        <module>resttemplate</module>
     </modules>
 </project>
