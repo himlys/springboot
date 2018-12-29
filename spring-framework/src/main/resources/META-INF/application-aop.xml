@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="userServiceProxyAdvice" class="com.spring.aop.aspectj.advice.UserServiceProxyAdvice"></bean>
+    <!--<aop:config>-->
+        <!--<aop:pointcut id="p1"-->
+                      <!--expression="execution(* com.spring.aop.service.impl.UserServiceProxyXMLImpl*+.*(..))"></aop:pointcut>-->
+        <!--<aop:advisor advice-ref="userServiceProxyAdvice" pointcut-ref="p1" id="a1"></aop:advisor>-->
+    <!--</aop:config>-->
+    <!--同一个配置文件中不能配置两个切面，上下两个不会一起生效 即便写在代码里也没用，不生效-->
+    <aop:config>
+        <aop:aspect ref="userServiceProxyAdvice">
+            <aop:before method="before" arg-names="name"
+                        pointcut="execution(* com.spring.aop.service.impl.UserServiceProxyXMLImpl*+.*(..)) and args(name)"></aop:before>
+        </aop:aspect>
+    </aop:config>
+</beans>
+

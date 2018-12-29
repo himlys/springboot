@@ -1,0 +1,14 @@
+logging:
+  level:
+    root: warn
+a:
+  b:
+    c: 1
+my:
+  placeholder:
+    default: META-INF
+spring:
+  aop:
+    proxy-target-class: true
+  datasource:
+    url:
