@@ -22,5 +22,6 @@
         <module>datasource</module>
         <module>logging</module>
         <module>resttemplate</module>
+        <module>data</module>
     </modules>
 </project>

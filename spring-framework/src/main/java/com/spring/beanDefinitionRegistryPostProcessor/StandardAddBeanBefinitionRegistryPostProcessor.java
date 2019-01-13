@@ -1,5 +1,7 @@
 package com.spring.beanDefinitionRegistryPostProcessor;
 
+import com.spring.factoryBean.DefaultUserServiceFactoryBean;
+import com.spring.factoryBean.UserServiceFactoryBeanInterface;
 import com.spring.lifecycle.LocalLifecycleProcessor;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
@@ -22,6 +24,10 @@ public class StandardAddBeanBefinitionRegistryPostProcessor implements BeanDefin
         registry.registerBeanDefinition("RegistryBeanFactoryPostProcessor", builder.getBeanDefinition());
         BeanDefinitionBuilder b = rootBeanDefinition(LocalLifecycleProcessor.class);
         registry.registerBeanDefinition(LIFECYCLE_PROCESSOR_BEAN_NAME, b.getBeanDefinition());
+        BeanDefinitionBuilder a = BeanDefinitionBuilder.genericBeanDefinition(DefaultUserServiceFactoryBean.class);
+        a.addConstructorArgValue(UserServiceFactoryBeanInterface.class);
+        registry.registerBeanDefinition("userServiceFactoryBeanInterface",a.getBeanDefinition());
+//        a.setFactoryMethod();
     }
 
     @Override

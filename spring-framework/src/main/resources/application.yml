@@ -11,4 +11,57 @@ spring:
   aop:
     proxy-target-class: true
   datasource:
-    url:
+#    password: lizhanyong
+#    url: jdbc:mysql://192.168.111.155:3306/ds0?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+#    username: lizhanyong
+#    hikari:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      max-active: 20
+#      max-pool-prepared-statement-per-connection-size: 20
+#      max-wait: 60000
+#      min-idle: 5
+#      validation-query: select 1 from dual
+#      validation-query-timeout: 60000
+
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      filter:
+        slf4j:
+          connection-log-enabled: false
+          result-set-log-enabled: true
+          statement-executable-sql-log-enable: true
+          statement-log-enabled: false
+      filters: stat,wall
+      initial-size: 5
+      max-active: 20
+      max-pool-prepared-statement-per-connection-size: 20
+      max-wait: 60000
+      min-idle: 5
+      password: lizhanyong
+      pool-prepared-statements: true
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      time-between-eviction-runs-millis: 300000
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://192.168.111.160:3306/ds0?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+      username: lizhanyong
+      validation-query: select 1 from dual
+      validation-query-timeout: 60000
+  mvc:
+    contentnegotiation:
+      media-types:
+        json: application/json
+        xml: application/xml
+#    static-path-pattern: /html/**   // 一般不改这个 改了，要改一些其他东西，尽量不要改
+    view:
+      suffix: .html
+    static-path-pattern: /**
+  cache:
+    type: simple
+#  redis:
+#    host: 130.84.211.28
+#    port: 6379
+#    password: wobss!#%
+
+

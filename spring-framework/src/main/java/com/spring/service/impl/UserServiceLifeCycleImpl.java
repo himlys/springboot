@@ -4,7 +4,6 @@ import com.spring.properties.AProperty;
 import com.spring.service.UserServiceLifeCycle;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.Lifecycle;
 import org.springframework.context.SmartLifecycle;
 import org.springframework.stereotype.Service;
 
