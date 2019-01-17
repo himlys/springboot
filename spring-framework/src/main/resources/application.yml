@@ -44,7 +44,7 @@ spring:
       test-while-idle: true
       time-between-eviction-runs-millis: 300000
       type: com.alibaba.druid.pool.DruidDataSource
-      url: jdbc:mysql://192.168.111.160:3306/ds0?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+      url: jdbc:mysql://192.168.111.161:3306/ds0?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
       username: lizhanyong
       validation-query: select 1 from dual
       validation-query-timeout: 60000
@@ -60,8 +60,8 @@ spring:
   cache:
     type: simple
 #  redis:
-#    host: 130.84.211.28
+#    host: 127.0.0.1
 #    port: 6379
-#    password: wobss!#%
+#    password: abc
 
 
