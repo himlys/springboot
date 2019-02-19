@@ -4,6 +4,7 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class SimpleBlockingQueue {
+//    阻塞队列，使用lock和condition作为判定。这里是真的锁定的，和CAS方式不一样。
     final BlockingQueue<Runnable> queue = new ArrayBlockingQueue<>(10, true);
     Runnable active;
     static ThreadFactory threadFactory = new InnerThreadFactory();

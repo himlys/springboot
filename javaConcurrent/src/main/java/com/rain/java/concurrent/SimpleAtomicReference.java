@@ -3,6 +3,7 @@ package com.rain.java.concurrent;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class SimpleAtomicReference {
+//    没什么好讲的，使用cas的方式，实现了线程安全。
     static SimpleAR simpleAR = new SimpleAR(20);
     static AtomicReference<SimpleAR> atomicReference = new AtomicReference<>(simpleAR);
     public static void main(String args[]){
