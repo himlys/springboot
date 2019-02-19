@@ -1,7 +1,7 @@
 package com.rain.common.datasource.config;
 
 import com.alibaba.druid.filter.logging.LogFilter;
-import com.asiainfo.video.common.logging.logback.Logger;
+import com.asiainfo.spring.common.logging.logback.Logger;
 import org.slf4j.Marker;
 import org.slf4j.MarkerFactory;
 import org.springframework.util.ClassUtils;

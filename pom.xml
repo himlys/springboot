@@ -12,6 +12,9 @@
     <modules>
         <module>spring-framework</module>
         <module>common</module>
+        <module>rocketmq</module>
+        <module>RocketMQRemoting</module>
+        <module>javaConcurrent</module>
     </modules>
     <groupId>com.rain.springboot</groupId>
     <artifactId>springboot</artifactId>
@@ -25,6 +28,9 @@
         <druid.starter.version>1.1.10</druid.starter.version>
         <fastjson.version>1.2.54</fastjson.version>
         <mysql.version>8.0.13</mysql.version>
+        <mybatis.version>2.0.0</mybatis.version>
+        <fst.de.ruedigermoeller>2.57</fst.de.ruedigermoeller>
+
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -46,6 +52,11 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
+                <groupId>de.ruedigermoeller</groupId>
+                <artifactId>fst</artifactId>
+                <version>${fst.de.ruedigermoeller}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-jetty</artifactId>
                 <version>${springboot.version}</version>
@@ -54,6 +65,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-aop</artifactId>
                 <version>${springboot.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>

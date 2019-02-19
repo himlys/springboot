@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://C:/LZY/spring-framework/spring-webmvc/src/main/resources/org/springframework/web/servlet/DispatcherServlet.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RocketMQRemoting" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/datasource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/logging" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/resttemplate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaConcurrent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq/rocketmq-dscommon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq/rocketmq-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rocketmq/rocketmq-starter1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/some-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-framework" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

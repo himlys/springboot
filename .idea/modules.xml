@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RocketMQRemoting/RocketMQRemoting.iml" filepath="$PROJECT_DIR$/RocketMQRemoting/RocketMQRemoting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/base/base.iml" filepath="$PROJECT_DIR$/common/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/cache/cache.iml" filepath="$PROJECT_DIR$/common/cache/cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/data/data.iml" filepath="$PROJECT_DIR$/common/data/data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/datasource/datasource.iml" filepath="$PROJECT_DIR$/common/datasource/datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaConcurrent/javaConcurrent.iml" filepath="$PROJECT_DIR$/javaConcurrent/javaConcurrent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/logging/logging.iml" filepath="$PROJECT_DIR$/common/logging/logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/resttemplate/resttemplate.iml" filepath="$PROJECT_DIR$/common/resttemplate/resttemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rocketmq/rocketmq.iml" filepath="$PROJECT_DIR$/rocketmq/rocketmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rocketmq/rocketmq-dscommon/rocketmqdscommon.iml" filepath="$PROJECT_DIR$/rocketmq/rocketmq-dscommon/rocketmqdscommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rocketmq/rocketmq-starter/rocketmqstarter.iml" filepath="$PROJECT_DIR$/rocketmq/rocketmq-starter/rocketmqstarter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rocketmq/rocketmq-starter1/rocketmqstarter1.iml" filepath="$PROJECT_DIR$/rocketmq/rocketmq-starter1/rocketmqstarter1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-framework/spring-framework.iml" filepath="$PROJECT_DIR$/spring-framework/spring-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springboot.iml" filepath="$PROJECT_DIR$/.idea/springboot.iml" />
+    </modules>
+  </component>
+</project>

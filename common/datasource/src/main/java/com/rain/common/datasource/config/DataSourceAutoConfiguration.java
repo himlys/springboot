@@ -2,6 +2,7 @@ package com.rain.common.datasource.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
+import com.asiainfo.spring.common.logging.logback.BaseLoggingObject;
 import com.rain.common.base.RainObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -18,14 +19,14 @@ import java.sql.SQLException;
 @Configuration
 @ConditionalOnClass(DataSource.class)
 @EnableConfigurationProperties(Slf4jConfigurationProperties.class)
-@ConditionalOnProperty(name = "spring.datasource.druid")
-public class DataSourceAutoConfiguration extends RainObject {
+@ConditionalOnProperty(name = "driver-class-name",prefix = "spring.datasource.druid")
+public class DataSourceAutoConfiguration extends BaseLoggingObject {
     @Configuration
     @ConditionalOnClass(DruidDataSource.class)
     class DruidDataSourceConfiguration {
         @Primary
         @Bean
-        @ConfigurationProperties("spring.datasource.druid")
+        @ConditionalOnProperty(name = "driver-class-name",prefix = "spring.datasource.druid")
         public DruidDataSource dataSourceOne(Slf4jConfigurationProperties slf4jConfigurationProperties) {
             DruidDataSource ds = DruidDataSourceBuilder.create().build();
             try {

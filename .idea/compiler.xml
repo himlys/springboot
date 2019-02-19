@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="base" />
+        <module name="cache" />
+        <module name="data" />
+        <module name="datasource" />
+        <module name="javaConcurrent" />
+        <module name="logging" />
+        <module name="resttemplate" />
+        <module name="rocketmqdscommon" />
+        <module name="RocketMQRemoting" />
+        <module name="rocketmqstarter" />
+        <module name="rocketmqstarter1" />
+        <module name="spring-framework" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base" target="1.8" />
+      <module name="cache" target="1.7" />
+      <module name="common" target="1.8" />
+      <module name="data" target="1.8" />
+      <module name="datasource" target="1.8" />
+      <module name="javaConcurrent" target="1.8" />
+      <module name="logging" target="1.8" />
+      <module name="resttemplate" target="1.7" />
+      <module name="rocketmq" target="1.8" />
+      <module name="rocketmqdscommon" target="1.8" />
+      <module name="RocketMQRemoting" target="1.7" />
+      <module name="rocketmqstarter" target="1.8" />
+      <module name="rocketmqstarter1" target="1.8" />
+      <module name="serialization" target="1.7" />
+      <module name="serializationapi" target="1.8" />
+      <module name="serializationfst" target="1.8" />
+      <module name="sometest" target="1.7" />
+      <module name="spring-framework" target="1.8" />
+      <module name="springboot" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
